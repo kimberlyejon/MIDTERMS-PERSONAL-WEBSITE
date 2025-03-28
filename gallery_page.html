@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" href="gallery/IMG_03.jpeg" type="image/jpeg">
+        <title>
+            Photo Gallery
+        </title>
+        <style>
+        .gallery-preview-images {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .gallery-preview-images-item {
+            width: 220px; 
+            height: 220px;
+            margin-top: 10px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        .gallery-preview-images-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-preview-images-item::before {
+            content: attr(data-title);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 5px;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-preview-images-item:hover::before {
+            opacity: 1;
+        }
+
+        section {
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        </style>
+    </head>
+    <body>
+        <nav id="nav_style">
+            <ul id="ul_style">
+                <li>
+                    <a href="index.html" id="nav_a_style">Home</a></li>
+                <li>
+                    <a href="biography_page.html" id="nav_a_style">Biography</a>
+                </li>
+                <li>
+                    <a href="skills_page.html" id="nav_a_style">Skills</a>
+                </li>
+                <li>
+                    <a href="resume_page.html" id="nav_a_style">Resume</a>
+                </li>
+                <li>
+                    <a href="gallery_page.html" id="nav_a_style">Photo Gallery</a>
+                </li>
+                <li>
+                    <a href="media_page.html" id="nav_a_style">My Media</a>
+                </li>
+                <li>
+                    <a href="dreamplaces_page.html" id="nav_a_style">Dream Places</a>
+                </li>
+                <li>
+                    <a href="bucket_list_page.html" id="nav_a_style">Bucket List</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <h1 class="page-welcome-title">PHOTOS</h1>
+        
+            <div class="gallery-preview-images">
+                <div class="gallery-preview-images-item" data-title="Cuckoo">
+                    <a href="gallery/IMG_05.jpeg">
+                        <img src="gallery/IMG_05.jpeg" alt="Image 1">
+                    </a>
+                </div>
+        
+                <div class="gallery-preview-images-item" data-title="Cute lang">
+                    <a href="gallery/IMG_07.jpeg">
+                        <img src="gallery/IMG_07.jpeg" alt="Image 2">
+                    </a>
+                </div>
+        
+                <div class="gallery-preview-images-item" data-title="Lynette Cosplay">
+                    <a href="gallery/hobby03.jpg">
+                        <img src="gallery/hobby03.jpg" alt="Image 3">
+                    </a>
+                </div>   
+        
+                <div class="gallery-preview-images-item" data-title="IT Student">
+                    <a href="gallery/me04.jpg">
+                        <img src="gallery/me04.jpg" alt="Image 4">
+                    </a>
+                </div>
+        
+                <div class="gallery-preview-images-item" data-title="Hello Kitty">
+                    <a href="gallery/kid_02.jpg">
+                        <img src="gallery/kid_02.jpg" alt="Image 5">
+                    </a>
+                </div>
+                
+                <div class="gallery-preview-images-item" data-title="Christmas Party">
+                    <a href="gallery/kid_01.jpg">
+                        <img src="gallery/kid_01.jpg" alt="Image 6">
+                    </a>
+                </div>
+        
+                <div class="gallery-preview-images-item" data-title="Studio Dance Class">
+                    <a href="gallery/hobby04.jpg">
+                        <img src="gallery/hobby04.jpg" alt="Image 7">
+                    </a>
+                </div>
+        
+                <div class="gallery-preview-images-item" data-title="Beach">
+                    <a href="gallery/IMG_01.jpeg">
+                        <img src="gallery/IMG_01.jpeg" alt="Image 8">
+                    </a>
+                </div>
+        
+                <div class="gallery-preview-images-item" data-title="Kubo Collection">
+                    <a href="gallery/interest04.jpg">
+                        <img src="gallery/interest04.jpg" alt="Image 9">
+                    </a>
+                </div>
+        
+                <div class="gallery-preview-images-item" data-title="Smile">
+                    <a href="gallery/me01.jpg">
+                        <img src="gallery/me01.jpg" alt="Image 10">
+                    </a>
+                </div>
+        
+                <div class="gallery-preview-images-item" data-title="Yae Miko Cosplay">
+                    <a href="gallery/hobby01.jpg">
+                        <img src="gallery/hobby01.jpg" alt="Image 11">
+                    </a>
+                </div>
+        
+                <div class="gallery-preview-images-item" data-title="Kinder Graduation">
+                    <a href="gallery/kid_04.jpg">
+                        <img src="gallery/kid_04.jpg" alt="Image 12">
+                    </a>
+                </div>
+        
+                <div class="gallery-preview-images-item" data-title="Pre-Debut Shoot">
+                    <a href="gallery/teen_02.jpg">
+                        <img src="gallery/teen_02.jpg" alt="Image 13">
+                    </a>
+                </div>
+        
+                <div class="gallery-preview-images-item" data-title="Cutie Hirono">
+                    <a href="gallery/interest03.jpg">
+                        <img src="gallery/interest03.jpg" alt="Image 14">
+                    </a>
+                </div>
+        
+                <div class="gallery-preview-images-item" data-title="Pageant">
+                    <a href="gallery/teen_04.jpg">
+                        <img src="gallery/teen_04.jpg" alt="Image 15">
+                    </a>
+                </div>
+        
+                <div class="gallery-preview-images-item" data-title="Secret Hirono">
+                    <a href="gallery/interest01.jpg">
+                        <img src="gallery/interest01.jpg" alt="Image 16">
+                    </a>
+                </div>
+        
+                <div class="gallery-preview-images-item" data-title="Sagala">
+                    <a href="gallery/teen_03.jpg">
+                        <img src="gallery/teen_03.jpg" alt="Image 17">
+                    </a>
+                </div>
+        
+                <div class="gallery-preview-images-item" data-title="Blue Sky">
+                    <a href="gallery/IMG_02.jpeg">
+                        <img src="gallery/IMG_02.jpeg" alt="Image 18">
+                    </a>
+                </div>
+        
+                <div class="gallery-preview-images-item" data-title="CCSS Shirt">
+                    <a href="gallery/me03.jpg">
+                        <img src="gallery/me03.jpg" alt="Image 19">
+                    </a>
+                </div>
+        
+                <div class="gallery-preview-images-item" data-title="Little Me">
+                    <a href="gallery/kid_03.jpg">
+                        <img src="gallery/kid_03.jpg" alt="Image 20">
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+    
+        
+        <section>
+            <div class="goto-top-navigator-container">
+                <div class="goto-top-navigator-item">
+                    <a href="#">
+                        <img style="height: 24px; width: auto;" src="top-arrow-5-svgrepo-com.svg" alt="" srcset="">
+                        <p> Go Top</p>
+                    </a>
+                </div>
+            </div>
+        </section> 
+    </body>
+</html>

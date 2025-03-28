@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" href="gallery/IMG_03.jpeg" type="image/jpeg">
+        <title>My Media</title>
+        <style>
+            .side-nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 30px;
+                position: relative;
+            }
+
+            .side-nav ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                gap: 70px;
+            }
+
+            .nav-box {
+                display: inline-block;
+                padding: 10px 15px;
+                border-radius: 8px;
+                margin: 10px 10px 10px 0;
+                background-color: #ffe9f6;
+                color: #000;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 15px;
+            }
+
+            .grid-container-main {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+
+            .grid-main-item {
+                text-align: center;
+                border-radius: 5px;
+            }
+
+            .grid-container-musicalbums {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 40px;
+                justify-items: center;
+            }
+
+            .grid-musicalbums-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                font-size: small;
+                background-color: #ffdaef;
+                margin: 0 80px;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            }
+
+            .grid-musicalbums-item img {
+                width: 250px;
+                height: 250px;
+                border-radius: 8px;
+                object-fit: cover;
+                margin-bottom: 10px;
+            }
+
+            .grid-musicalbums-item audio {
+                margin-bottom: 10px;
+            }
+
+            .grid-musicalbums-item p {
+                font-size: 14px;
+                color: #000000;
+            }
+
+            .media-preview-text{
+                background-color: #ffe9f6;
+                padding: 15px;
+                border-radius: 16px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                margin: 3px 0 10px 0;
+            }
+
+            .media-preview-text p{
+                text-align: justify; 
+                line-height: 1.8; 
+                font-size: 13.5px; 
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+                text-indent: 0; 
+                margin: 10px 0; 
+            }
+
+            section {
+                margin: 0 20%;
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="nav_style">
+            <ul id="ul_style">
+                <li><a href="index.html" id="nav_a_style">Home</a></li>
+                <li><a href="biography_page.html" id="nav_a_style">Biography</a></li>
+                <li><a href="skills_page.html" id="nav_a_style">Skills</a></li>
+                <li><a href="resume_page.html" id="nav_a_style">Resume</a></li>
+                <li><a href="gallery_page.html" id="nav_a_style">Photo Gallery</a></li>
+                <li><a href="media_page.html" id="nav_a_style">My Media</a></li>
+                <li><a href="dreamplaces_page.html" id="nav_a_style">Dream Places</a></li>
+                <li><a href="bucket_list_page.html" id="nav_a_style">Bucket List</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <h1 class="page-welcome-title">Welcome to My Music and Movie World! <br> Explore my favorite tunes and films.</h1>
+
+            <div class="side-nav">
+                <ul>
+                    <li><a href="media_tvshows_page.html" class="nav-box">TV Shows</a></li>
+                    <li><a href="media_movies_page.html" class="nav-box">Movies</a></li>
+                </ul>
+            </div>
+
+            <div class="grid-container-main">
+                <div class="grid-main-item">
+                    <h1 style="text-align: center; margin-bottom: 30px;">Pop</h1>
+
+                    <div class="grid-container-musicalbums">
+                        <div class="grid-musicalbums-item">
+                            <img src="media/album0.jpg" alt="Guilty as Sin">
+                            <p><b>Guilty as Sin</b><br>Taylor Swift</p>
+                            <audio controls>
+                                <source src="gulity.mp3">
+                            </audio>
+
+                            <div class="media-preview-text">
+                                <p> I love this song because it reminds me of times when I’ve been caught in an intense, passionate connection that I couldn’t escape,
+                                    even though it felt complicated. This is was my comfort song when I am in my miserable situation. The song perfectly captures the tension between excitement and guilt, and the emotional whirlwind that comes with it.
+                                    When I listen to the lyrics, it resonates with how I feel in situations where emotions run high, and I end up in something that’s both thrilling and
+                                    conflicted at the same time.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="grid-musicalbums-item">
+                            <img src="media/album3.jpg" alt="Gateaway Car">
+                            <p><b>Gateaway Car</b><br>Taylor Swift</p>
+                            <audio controls>
+                                <source src="gateaway car.mp3">
+                            </audio>
+
+                            <div class="media-preview-text">
+                                <p> I really like this song because it reminds me of those moments when I felt trapped in a relationship
+                                    that was thrilling yet ultimately fleeting. The song perfectly captures the feeling of running away from something,
+                                    only to realize it's not the escape you were looking for. Also, I like the energetic vibe contrasts with the underlying theme of regret and
+                                    realization, which resonates with me when I think about those times when I chased excitement without considering the consequences.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-main-item">
+                    <h2 style="text-align: center; margin-top: 30px;">RnB</h2>
+                    <div class="grid-container-musicalbums">
+                        <div class="grid-musicalbums-item">
+                            <img src="media/album4.jpg" alt="Nobody Gets Me">
+                            <p><b>Nobody Gets Me</b><br>SZA</p>
+                            <audio controls>
+                                <source src="nobody.mp3">
+                            </audio>
+
+                            <div class="media-preview-text">
+                                <p>I really connect with this song because it speaks to the feeling of being misunderstood in a relationship.
+                                    The song expresses the vulnerability of loving someone deeply yet feeling like they don't truly see or understand you.
+                                    It captures that sense of emotional isolation, and every time I listen to it, I’m reminded of moments where I’ve felt
+                                    disconnected, even when I cared the most. The raw honesty in the lyrics hits close to home, making me reflect on those times I felt alone despite being with someone.
+                                    
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="grid-musicalbums-item">
+                            <img src="media/album7.jpg" alt="Always">
+                            <p><b>Always</b><br>Daniel Caesar</p>
+                            <audio controls>
+                                <source src="always.mp3">
+                            </audio>
+
+                            <div class="media-preview-text">
+                                <p>This song holds a special place for me because it captures the feeling of unconditional love, even when things aren’t perfect.
+                                    The song's gentle vibe and heartfelt lyrics speak to the constant presence of love through ups and downs. It reminds me of 
+                                    our relationship with my boyfriend, where even during difficult times, love remains strong and steady. The simplicity of the
+                                    message resonates deeply with me and makes me appreciate the genuine, lasting connections I’ve had.
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="goto-top-navigator-container">
+                <div class="goto-top-navigator-item">
+                    <a href="#">
+                        <img style="height: 24px; width: auto;" src="top-arrow-5-svgrepo-com.svg" alt="Go Top">
+                        <p> Go Top</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
